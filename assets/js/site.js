@@ -329,16 +329,14 @@
   function renderBrothers(d) {
     const groups = [{ name: d.executiveBoardTitle || "Executive Board", id: "executive-board", label: "Executive Board", brothers: d.executiveBoard || [] }]
       .concat((d.classes || []).map((c) => ({ name: c.name, id: slug(c.name), label: c.name, brothers: c.brothers || [] })));
-    const total = (d.classes || []).reduce((n, c) => n + (c.brothers || []).length, 0);
 
-    const chips = groups.map((g, i) => `<button class="chip" data-filter="${g.id}" aria-pressed="${i === 0}">${esc(g.label)}<span class="count">${g.brothers.length}</span></button>`).join("")
-      + `<button class="chip" data-filter="all" aria-pressed="false">Everyone<span class="count">${total}</span></button>`;
+    const chips = groups.map((g, i) => `<button class="chip" data-filter="${g.id}" aria-pressed="${i === 0}">${esc(g.label)}</button>`).join("")
+      + `<button class="chip" data-filter="all" aria-pressed="false">Everyone</button>`;
 
     return `
       ${pageHead({
         title: "Brothers",
         lede: d.intro,
-        extra: `<p class="brothers-hint">${icon.hand}<span>Tap or hover on a brother to open their LinkedIn.</span></p>`,
       })}
       <div class="filter-bar"><div class="wrap"><div class="filters" role="toolbar" aria-label="Filter brothers by class">${chips}</div></div></div>
       <div class="wrap">
