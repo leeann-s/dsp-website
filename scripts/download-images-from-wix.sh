@@ -4,7 +4,7 @@
 #   Mac: open Terminal, type  bash  and a space, drag this file in, press Enter.
 #   Safe to run again if anything fails.
 cd "$(dirname "$0")/.." || exit 1
-echo "Downloading 140 images from Wix..."
+echo "Downloading 141 images from Wix..."
 fail=0
 get() {
   mkdir -p "$(dirname "images/$2")"
@@ -28,6 +28,7 @@ get "https://static.wixstatic.com/media/646782_6de26b5148c34c7a8207442c830d6a5a~
 get "https://static.wixstatic.com/media/646782_fcd15717e19546a099eba84ec47fedf7~mv2.jpeg/v1/fit/w_1600,h_1600,q_85/photo.jpeg" "home/gallery-4.jpg" "https://static.wixstatic.com/media/646782_fcd15717e19546a099eba84ec47fedf7~mv2.jpeg"
 get "https://static.wixstatic.com/media/646782_d01d346d957d4ce397c682400b01481b~mv2.jpg/v1/fit/w_1600,h_1600,q_85/photo.jpg" "home/gallery-5.jpg" "https://static.wixstatic.com/media/646782_d01d346d957d4ce397c682400b01481b~mv2.jpg"
 get "https://static.wixstatic.com/media/646782_f301ac7acde448549ee5c471e1a4885b~mv2.jpg/v1/fit/w_2400,h_2400,q_85/photo.jpg" "about/header.jpg" "https://static.wixstatic.com/media/646782_f301ac7acde448549ee5c471e1a4885b~mv2.jpg"
+get "https://static.wixstatic.com/media/646782_40d374e5e94f46fc8640a8b932ae3fa5~mv2.png/v1/fit/w_2400,h_2400,q_85/photo.png" "about/history.png" "https://static.wixstatic.com/media/646782_40d374e5e94f46fc8640a8b932ae3fa5~mv2.png"
 get "https://static.wixstatic.com/media/646782_8d9c2cfe4a3c41d9b952be8481e525d9~mv2.jpg/v1/fit/w_1600,h_1600,q_85/photo.jpg" "about/value-brotherhood.jpg" "https://static.wixstatic.com/media/646782_8d9c2cfe4a3c41d9b952be8481e525d9~mv2.jpg"
 get "https://static.wixstatic.com/media/646782_9481562bd4654e48ae9ab237833d4928~mv2.jpg/v1/fit/w_1600,h_1600,q_85/photo.jpg" "about/value-service.jpg" "https://static.wixstatic.com/media/646782_9481562bd4654e48ae9ab237833d4928~mv2.jpg"
 get "https://static.wixstatic.com/media/646782_9e3a7c4a96ee43499918de58166413a9~mv2.jpg/v1/fit/w_1600,h_1600,q_85/photo.jpg" "about/value-professionalism.jpg" "https://static.wixstatic.com/media/646782_9e3a7c4a96ee43499918de58166413a9~mv2.jpg"

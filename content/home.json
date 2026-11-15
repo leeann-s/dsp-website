@@ -3,7 +3,7 @@
   "heroTitle": "Delta Sigma Pi",
   "heroTagline": "America's foremost business fraternity",
   "heroSubline": "Gamma Sigma Chapter at the University of Maryland, Robert H. Smith School of Business.",
-  "introStatement": "A co-ed professional business fraternity where brothers from different backgrounds build each other up, in class, in their careers and long after Maryland.",
+  "introStatement": "Coming from different backgrounds and unique experiences, we have created and cultivated a support system built around understanding and familial knowledge.",
   "crest": "https://static.wixstatic.com/media/646782_afaf40e46f2d4caf85a6dab6eaa69145~mv2.png",
   "stats": [
     {
@@ -27,22 +27,22 @@
   "pillars": [
     {
       "name": "Brotherhood",
-      "text": "We support brothers holistically, from chapter-wide dinners and gatherings to showing up for each other outside of DSP.",
+      "text": "As a professional business fraternity, Delta Sigma Pi focuses on supporting brothers holistically. Formally, Delta Sigma Pi hosts numerous chapter-wide events from dinners to gatherings.",
       "photo": "https://static.wixstatic.com/media/646782_8123a72b0e434d0d9bd683a898e01254~mv2.jpg"
     },
     {
       "name": "Service",
-      "text": "Every semester we read to elementary schoolers, mulch trees, run business workshops for high schoolers and more.",
+      "text": "We hold a variety of community service events each semester such as reading picture books to elementary school students, shoveling mulch onto trees, holding workshops for high school students interested in business, and more.",
       "photo": "https://static.wixstatic.com/media/646782_09b9b99b9f4842e08d28b42f9a477cfa~mv2.jpg"
     },
     {
       "name": "Professionalism",
-      "text": "Networking events, resume reviews, panels, mock interviews and workshops, held every semester.",
+      "text": "Our chapter holds many educational professional events each semester. These events include, but are not limited to, networking events, resume reviews, panel discussions, mock interviews, and various educational workshops.",
       "photo": "https://static.wixstatic.com/media/646782_570b7d06e70e4cbfaa596ccec69b400b~mv2.jpg"
     },
     {
       "name": "Scholarship",
-      "text": "Fifteen executive positions, a LEAD conference every semester and Grand Chapter Congress every other year.",
+      "text": "Delta Sigma Pi provides numerous opportunities for personal growth. Every semester, we have a LEAD conference held to promote growth and networking.",
       "photo": "https://static.wixstatic.com/media/646782_ee3f09e70f614f4abdb68286cb756552~mv2.jpg"
     }
   ],
