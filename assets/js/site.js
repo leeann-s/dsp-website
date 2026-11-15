@@ -322,7 +322,6 @@
         <div class="member-photo">
           ${photo}
           <span class="member-badge" aria-hidden="true">${icon.linkedin}</span>
-          <span class="member-link" aria-hidden="true"><span class="li">${icon.linkedin}View LinkedIn</span><span class="arrow">${icon.out}</span></span>
         </div>
         ${text}
       </a>`;

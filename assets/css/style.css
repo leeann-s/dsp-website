@@ -333,37 +333,31 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; line-height: 1.05; }
 .member-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 22%; transition: transform .6s var(--ease), filter .6s var(--ease); }
 .member-photo::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(85,63,135,0) 30%, rgba(37,26,65,.88) 100%);
+  background: linear-gradient(180deg, rgba(85,63,135,0) 55%, rgba(37,26,65,.45) 100%);
   opacity: 0; transition: opacity .4s var(--ease);
 }
-.member-link {
-  position: absolute; left: 14px; right: 14px; bottom: 14px; z-index: 1;
-  display: flex; align-items: center; justify-content: space-between; gap: 10px;
-  background: var(--white); color: var(--purple-ink); border-radius: 999px; padding: 10px 12px 10px 14px;
-  font-weight: 700; font-size: .86rem;
-  transform: translateY(calc(100% + 18px)); transition: transform .45s var(--ease);
+/* LinkedIn badge: sits in the corner, fades in on hover */
+.member-badge {
+  position: absolute; right: 12px; bottom: 12px; z-index: 1;
+  width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--white); color: #0A66C2; box-shadow: 0 2px 10px rgba(30,22,49,.18);
+  opacity: 0; transform: translateY(4px); transition: opacity .35s var(--ease), transform .35s var(--ease);
 }
-.member-link .li { display: inline-flex; align-items: center; gap: 8px; }
-.member-link .li svg { width: 18px; height: 18px; color: #0A66C2; }
-.member-link .arrow { width: 26px; height: 26px; border-radius: 50%; background: var(--purple); color: var(--white); display: grid; place-items: center; flex: none; }
-.member-link .arrow svg { width: 12px; height: 12px; }
-.member-badge { display: none; position: absolute; top: 10px; right: 10px; z-index: 1; width: 32px; height: 32px; border-radius: 50%; background: var(--white); color: #0A66C2; place-items: center; box-shadow: 0 2px 10px rgba(30,22,49,.18); }
-.member-badge svg { width: 16px; height: 16px; }
+.member-badge svg { width: 17px; height: 17px; }
 .member-name { margin: 14px 0 0; font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; line-height: 1.25; }
 .member-role { margin: 3px 0 0; font-size: .9rem; line-height: 1.35; color: var(--purple); font-weight: 600; }
 .member-role.is-brother { color: var(--muted); font-weight: 500; }
 
-a.member:hover .member-photo img, a.member:focus-visible .member-photo img { transform: scale(1.06); }
+a.member:hover .member-photo img, a.member:focus-visible .member-photo img { transform: scale(1.04); }
 a.member:hover .member-photo::after, a.member:focus-visible .member-photo::after { opacity: 1; }
-a.member:hover .member-link, a.member:focus-visible .member-link { transform: none; }
+a.member:hover .member-badge, a.member:focus-visible .member-badge { opacity: 1; transform: none; }
 a.member:hover .member-name { text-decoration: underline; text-decoration-color: var(--gold-strong); text-decoration-thickness: 2px; text-underline-offset: 4px; }
 a.member:focus-visible { outline: none; }
 a.member:focus-visible .member-photo { outline: 3px solid var(--gold-strong); outline-offset: 3px; }
 
 /* Touch screens can't hover, so show a LinkedIn badge on every card instead */
 @media (hover: none), (pointer: coarse) {
-  a.member .member-badge { display: grid; }
-  .member-link { display: none; }
+  a.member .member-badge { opacity: 1; transform: none; }
 }
 
 /* ---------- About ---------- */
