@@ -7,11 +7,25 @@
     "Post job opportunities in our weekly chapter meetings",
     "Priority scheduling for corporate events with our chapter"
   ],
-  "packetLink": "",
+  "packetTitle": "Sponsorship packet",
+  "packetLink": "assets/docs/dsp-sponsorship-packet-2026.pdf",
+  "packetCover": "assets/docs/sponsorship-packet-cover.jpg",
   "sponsorsTitle": "Our sponsors",
   "sponsors": [
-    { "name": "KPMG", "logo": "https://static.wixstatic.com/media/646782_1974d3161206487bbb9cffd2590de47a~mv2.webp", "website": "" },
-    { "name": "Textron", "logo": "https://static.wixstatic.com/media/646782_46e6f26c47af4b0491ea2c22328ea814~mv2.png", "website": "" },
-    { "name": "EY", "logo": "https://static.wixstatic.com/media/646782_5b50b6b721b146e2a6fbb2c78560732b~mv2.png", "website": "" }
+    {
+      "name": "KPMG",
+      "logo": "https://static.wixstatic.com/media/646782_1974d3161206487bbb9cffd2590de47a~mv2.webp",
+      "website": ""
+    },
+    {
+      "name": "Textron",
+      "logo": "https://static.wixstatic.com/media/646782_46e6f26c47af4b0491ea2c22328ea814~mv2.png",
+      "website": ""
+    },
+    {
+      "name": "EY",
+      "logo": "https://static.wixstatic.com/media/646782_5b50b6b721b146e2a6fbb2c78560732b~mv2.png",
+      "website": ""
+    }
   ]
 }

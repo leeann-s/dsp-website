@@ -46,6 +46,8 @@
     check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.6 2.5L16 9.5"/></svg>',
     info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>',
     play: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>',
+    doc: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>',
+    download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></svg>',
     hand: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11m0-1V4.5a1.5 1.5 0 0 1 3 0V11m0-4.5a1.5 1.5 0 0 1 3 0V14a7 7 0 0 1-7 7h-.6a6 6 0 0 1-4.6-2.2L3.4 14.6a1.6 1.6 0 0 1 2.3-2.2L9 15"/></svg>',
   };
 
@@ -339,7 +341,7 @@
         lede: d.intro,
       })}
       <div class="filter-bar"><div class="wrap"><div class="filters" role="toolbar" aria-label="Filter brothers by class">${chips}</div></div></div>
-      <div class="wrap">
+      <div class="wrap roster-wrap">
         ${groups.map((g, i) => `
           <section class="group" data-group="${g.id}" id="${g.id}" ${i === 0 ? "" : "hidden"} aria-labelledby="g-${g.id}">
             <div class="group-head"><h2 class="h-md" id="g-${g.id}">${esc(g.name)}</h2><span>${g.brothers.length} ${g.brothers.length === 1 ? "brother" : "brothers"}</span></div>
@@ -446,6 +448,11 @@
   /* ---------- Sponsorship ---------- */
 
   function renderSponsorship(d, s) {
+    const pdf = d.packetLink;
+    const fileName = pdf ? decodeURIComponent(pdf.split("/").pop().split("?")[0]) : "";
+    const packetButtons = pdf ? `
+              <a class="btn btn-gold" href="${esc(pdf)}" target="_blank" rel="noopener">${icon.doc}View the packet</a>
+              <a class="btn btn-ghost" href="${esc(pdf)}" download="${esc(fileName)}">${icon.download}Download PDF</a>` : "";
     return `
       ${pageHead({ title: d.title, lede: d.intro })}
       <section class="section">
@@ -456,15 +463,27 @@
           </div>
           <aside class="cta-panel">
             <h2>Partner with us</h2>
-            <p>Reach out for our sponsorship packet and tier details.</p>
+            <p>${pdf ? "Our sponsorship packet covers our events, members and sponsorship tiers." : "Reach out for our sponsorship packet and tier details."}</p>
             <div class="hero-actions" style="margin-top:0">
-              <a class="btn btn-gold" href="mailto:${esc(s.contactEmail)}?subject=Sponsorship%20inquiry">${icon.mail}Email our outreach team</a>
-              ${d.packetLink ? `<a class="btn btn-ghost" href="${esc(d.packetLink)}" target="_blank" rel="noopener">View the packet</a>` : ""}
+              ${packetButtons || `<a class="btn btn-gold" href="mailto:${esc(s.contactEmail)}?subject=Sponsorship%20inquiry">${icon.mail}Email our outreach team</a>`}
             </div>
-            <span class="email">${esc(s.contactEmail)}</span>
+            <p class="cta-contact">Questions? Email <a href="mailto:${esc(s.contactEmail)}?subject=Sponsorship%20inquiry">${esc(s.contactEmail)}</a></p>
           </aside>
         </div>
       </section>
+      ${pdf ? `
+      <section class="section on-dark" id="packet" aria-labelledby="packet-title">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 class="h-lg" id="packet-title">${esc(d.packetTitle || "Sponsorship packet")}</h2>
+            <div class="hero-actions" style="margin-top:0">${packetButtons}</div>
+          </div>
+          <div class="packet-viewer">
+            <iframe src="${esc(pdf)}#view=FitH" title="${esc(d.packetTitle || "Sponsorship packet")} (PDF)" loading="lazy"></iframe>
+          </div>
+          ${d.packetCover ? `<a class="packet-cover" href="${esc(pdf)}" target="_blank" rel="noopener"><img src="${img(d.packetCover, 900)}" alt="Cover of the sponsorship packet. Tap to open the full PDF." loading="lazy"><span>Tap to open the full packet</span></a>` : ""}
+        </div>
+      </section>` : ""}
       ${sponsorsBlock(d, "section-tight on-lilac")}
       ${contactSection(s)}`;
   }
