@@ -1,0 +1,175 @@
+# Pages CMS configuration (https://pagescms.org)
+# This gives editors a simple form-based editor for the website.
+# Sign in at https://app.pagescms.org with GitHub and open this repository.
+
+media:
+  input: images/uploads
+  output: images/uploads
+
+content:
+  - name: brothers
+    label: Brothers
+    type: file
+    path: content/brothers.json
+    format: json
+    fields:
+      - { name: intro, label: Intro text, type: text }
+      - { name: executiveBoardTitle, label: Executive board heading, type: string }
+      - name: executiveBoard
+        label: Executive board
+        type: object
+        list: true
+        fields: &brother
+          - { name: name, label: Name, type: string, required: true }
+          - { name: role, label: Role (write "Brother" if no position), type: string }
+          - { name: photo, label: Photo (portrait works best), type: image }
+          - { name: linkedin, label: LinkedIn URL, type: string }
+      - name: classes
+        label: Classes
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Class name (e.g. Omega Class), type: string, required: true }
+          - name: brothers
+            label: Brothers in this class
+            type: object
+            list: true
+            fields: *brother
+
+  - name: recruitment
+    label: Recruitment
+    type: file
+    path: content/recruitment.json
+    format: json
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro, type: text }
+      - { name: requirementNote, label: Highlighted note, type: text }
+      - { name: flyer, label: This semester's flyer, type: image }
+      - name: events
+        label: Events
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Event name, type: string, required: true }
+          - { name: date, label: Date, type: date }
+          - { name: time, label: Time (e.g. 7 - 9 PM), type: string }
+          - { name: location, label: Location, type: string }
+          - { name: inviteOnly, label: Invite only, type: boolean }
+      - { name: videoTitle, label: Rush video heading, type: string }
+      - { name: videoUrl, label: Rush video link (YouTube or Vimeo; leave empty for "Coming soon"), type: string }
+      - { name: eligibilityTitle, label: Eligibility heading, type: string }
+      - { name: eligibility, label: Eligibility requirements, type: text, list: true }
+      - { name: flyersTitle, label: Past flyers heading, type: string }
+      - { name: pastFlyers, label: Past flyers, type: image, list: true }
+
+  - name: home
+    label: Home page
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - { name: heroImage, label: Big photo at the top, type: image }
+      - { name: heroTitle, label: Title, type: string }
+      - { name: heroTagline, label: Tagline, type: string }
+      - { name: heroSubline, label: Line under the tagline, type: text }
+      - { name: introStatement, label: Intro statement, type: text }
+      - { name: crest, label: Seal next to the intro, type: image }
+      - name: stats
+        label: Numbers
+        type: object
+        list: true
+        fields:
+          - { name: number, label: Number, type: string }
+          - { name: label, label: Label, type: string }
+      - { name: pillarsTitle, label: Pillars heading, type: string }
+      - name: pillars
+        label: Pillars
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: text, label: Short description, type: text }
+          - { name: photo, label: Photo, type: image }
+      - name: president
+        label: President's letter
+        type: object
+        fields:
+          - { name: title, label: Heading, type: string }
+          - { name: name, label: President's name, type: string }
+          - { name: role, label: Title, type: string }
+          - { name: photo, label: Photo, type: image }
+          - { name: letter, label: Letter (leave a blank line between paragraphs), type: text }
+          - { name: signoff, label: Sign-off, type: string }
+      - { name: galleryTitle, label: Gallery heading, type: string }
+      - { name: gallery, label: Gallery photos (5 look best), type: image, list: true }
+
+  - name: about
+    label: About page
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - { name: heroImage, label: Header photo, type: image }
+      - { name: title, label: Page title, type: string }
+      - { name: crest, label: Crest, type: image }
+      - { name: fraternityTitle, label: Fraternity heading, type: string }
+      - { name: fraternityText, label: Fraternity text, type: text }
+      - { name: purposeTitle, label: Purpose heading, type: string }
+      - { name: purposeText, label: Purpose text, type: text }
+      - { name: historyTitle, label: History heading, type: string }
+      - { name: historyText, label: History text, type: text }
+      - { name: historyPhoto, label: History photo, type: image }
+      - name: timeline
+        label: Timeline
+        type: object
+        list: true
+        fields:
+          - { name: year, label: Year, type: string }
+          - { name: text, label: What happened, type: string }
+      - { name: valuesTitle, label: Values heading, type: string }
+      - name: values
+        label: Values
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Name, type: string }
+          - { name: text, label: Description, type: text }
+          - { name: photo, label: Photo, type: image }
+
+  - name: sponsorship
+    label: Sponsorship
+    type: file
+    path: content/sponsorship.json
+    format: json
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: intro, label: Intro line, type: string }
+      - { name: text, label: Main text, type: text }
+      - { name: benefits, label: Benefits, type: string, list: true }
+      - { name: packetLink, label: Sponsorship packet link (optional), type: string }
+      - { name: sponsorsTitle, label: Sponsors heading, type: string }
+      - name: sponsors
+        label: Sponsors
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Company, type: string }
+          - { name: logo, label: Logo, type: image }
+          - { name: website, label: Website (optional), type: string }
+
+  - name: settings
+    label: Contact & social links
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - { name: chapterName, label: Chapter name, type: string }
+      - { name: school, label: School, type: string }
+      - { name: contactEmail, label: Contact email, type: string }
+      - { name: instagram, label: Instagram URL, type: string }
+      - { name: instagramHandle, label: Instagram handle, type: string }
+      - { name: linkedin, label: LinkedIn URL, type: string }
+      - { name: facebook, label: Facebook URL, type: string }
+      - { name: groupme, label: GroupMe invite link, type: string }
+      - { name: footerLine, label: Copyright line, type: string }

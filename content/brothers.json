@@ -1,0 +1,687 @@
+{
+  "intro": "Over 75 brothers across five classes, all studying business at the University of Maryland.",
+  "executiveBoardTitle": "Executive Board 2026",
+  "executiveBoard": [
+    {
+      "name": "Elle McNees",
+      "role": "President",
+      "photo": "https://static.wixstatic.com/media/646782_876bc19d0a4b44ada0ded11c5e0b8d48~mv2.png",
+      "linkedin": "https://www.linkedin.com/in/elle-mcnees-7841662b5/"
+    },
+    {
+      "name": "Eduardo Zavarce",
+      "role": "Chancellor",
+      "photo": "https://static.wixstatic.com/media/8fb96f_31925ca9a8a148329b391c38e7406091~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/eduardo-zavarce-31a6b2285/"
+    },
+    {
+      "name": "Ethan Lee",
+      "role": "Senior Vice President",
+      "photo": "https://static.wixstatic.com/media/646782_502e2d67f3d444c584f8d0ae71cb0502~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/ethanleeumd/"
+    },
+    {
+      "name": "Nicholas George",
+      "role": "Vice President of Operations",
+      "photo": "https://static.wixstatic.com/media/8fb96f_15c7a15ebe304e5eb021070d0a31f0ed~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/nicholas-w-george/"
+    },
+    {
+      "name": "Jared Kaplan",
+      "role": "Vice President of Finance",
+      "photo": "https://static.wixstatic.com/media/646782_0e118b3383894dc0baa4be852b83bd52~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/jaredwkaplan/"
+    },
+    {
+      "name": "Olivia Yuen",
+      "role": "Vice President of Pledge Education",
+      "photo": "https://static.wixstatic.com/media/646782_292ed9ef5b8848549f28e3f35de0a29f~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/olivia-yuen-/"
+    },
+    {
+      "name": "Konnor Lee",
+      "role": "Co-Vice President of Professional Affairs",
+      "photo": "https://static.wixstatic.com/media/646782_1d67fa6cef914b99a1131a304d9cd26f~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/konnorlee/"
+    },
+    {
+      "name": "Jimmy Zhu",
+      "role": "Co-Vice President of Professional Affairs",
+      "photo": "https://static.wixstatic.com/media/646782_f9066edc20ab4c57a3618bff4976dd12~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/james-zhu1/"
+    },
+    {
+      "name": "Jahmal Adams",
+      "role": "Co-Vice President of Community Service",
+      "photo": "https://static.wixstatic.com/media/646782_5c30f23c67ef4b0b86614b3711303b4a~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/jahmal-adams-846320333/"
+    },
+    {
+      "name": "Joe Lam",
+      "role": "Co-Vice President of Community Service",
+      "photo": "https://static.wixstatic.com/media/646782_28458d7023ed4c9dbfea39ac81f93e2b~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/joe-lam-60427934a/"
+    },
+    {
+      "name": "Xenia Chen",
+      "role": "Vice President of Scholarship & Awards",
+      "photo": "https://static.wixstatic.com/media/8fb96f_1405a9526de7481781b36347fe0bdf13~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/xenia--chen/"
+    },
+    {
+      "name": "Manomay Bhavani",
+      "role": "Vice President of Alumni Relations",
+      "photo": "https://static.wixstatic.com/media/646782_6cecf056987845d49d9e289afd408a25~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/manomay-bhavani/"
+    },
+    {
+      "name": "Leeann Shaw",
+      "role": "Vice President of Branding & Media",
+      "photo": "https://static.wixstatic.com/media/646782_7f0522db681744bb8da480dd55d87665~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/leeann-shaw/"
+    },
+    {
+      "name": "Jacqueline Day",
+      "role": "Co-Vice President of Marketing",
+      "photo": "https://static.wixstatic.com/media/646782_96516eed9369444587d9e1b37d889177~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/jacqueline-day-b512492a5/"
+    },
+    {
+      "name": "Michelle Zhang",
+      "role": "Co-Vice President of Marketing",
+      "photo": "https://static.wixstatic.com/media/646782_220aaec45bfc403389754b65fa2f7439~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/michelle-zhang9/"
+    },
+    {
+      "name": "Nayeli Portillo",
+      "role": "Vice President of DEI",
+      "photo": "https://static.wixstatic.com/media/8fb96f_1eed476f7c32447f9401848dd9c1cb65~mv2.jpg",
+      "linkedin": "https://www.linkedin.com/in/nayeliport/"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Tau Class",
+      "brothers": [
+        {
+          "name": "Metiol Alemayehu",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_133a24379d7f4b0780013231e346434a~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/metiol-alemayehu-/"
+        },
+        {
+          "name": "Andrew Mai",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_dfc695a5a2054a4cafba2a31c79f8212~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/amai04/"
+        },
+        {
+          "name": "Elle McNees",
+          "role": "President",
+          "photo": "https://static.wixstatic.com/media/646782_876bc19d0a4b44ada0ded11c5e0b8d48~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/elle-mcnees-7841662b5/"
+        },
+        {
+          "name": "Feven Meshesha",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_cc1aae1d3f4e471b93c6d1e3a1cd125d~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/fevenmeshesha/"
+        },
+        {
+          "name": "Celia Pham",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_41dc555ba4354ecca789fbfb7b20c31b~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/celia-pham-3879882b2/"
+        },
+        {
+          "name": "Joanna Qian",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_10c81e4ba9024d8493ed5fea87b520fa~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/joanna-qian-983866288/"
+        },
+        {
+          "name": "Vignajith (Jeet) Rajesh",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_f30cabd2fd4c4c0b8a131e278aac062a~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/vrajesh33/"
+        },
+        {
+          "name": "Kaylee Ritter",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_97a5068178784bed8c62e5d479c1b96f~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/kayleeritter/"
+        },
+        {
+          "name": "Aayushman Singh",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_f3d84314039341ca93f3c3993681048c~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/aayushmanksingh/"
+        },
+        {
+          "name": "Laili Saleh",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_b8f53be8d9ef41afb173a522c7b576bb~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/laili-saleh-5282b3205/"
+        },
+        {
+          "name": "Raheal Teferi",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_59a730f3f39845efabb501af03012dc4~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/rahealteferi/"
+        },
+        {
+          "name": "Michelle Yuen",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_3553a1956edc4e8c9befb5ed9948f877~mv2.jpg",
+          "linkedin": ""
+        },
+        {
+          "name": "Olivia Yuen",
+          "role": "Vice President of Pledge Education",
+          "photo": "https://static.wixstatic.com/media/646782_1c1f213d14114cd99368d6394a7fef0f~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/olivia-yuen-/"
+        }
+      ]
+    },
+    {
+      "name": "Upsilon Class",
+      "brothers": [
+        {
+          "name": "Karoon Armand",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_02968ba4738f47d3b79aa80057abc353~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/karoonarmand/"
+        },
+        {
+          "name": "Alexander Blackburn",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_9e45fc6a198d406eb71979fa0902e4aa~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/alexblackburn04/"
+        },
+        {
+          "name": "Nicole Chan",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_3cafc3faa7f642b6ad9706f4411aae8e~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/nicole-chan88/"
+        },
+        {
+          "name": "Sydney Fraser",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_a5e433c589f64009bd02da33bb078cba~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/sydneyfraserr/"
+        },
+        {
+          "name": "Jared Kaplan",
+          "role": "Vice President of Finance",
+          "photo": "https://static.wixstatic.com/media/646782_b862f46319874476a4fdab5093335e42~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/jaredwkaplan/"
+        },
+        {
+          "name": "Julian Lewis",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_70bd8ff2f62b47d997b92649a04a1a1d~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/julian-lewis-28112232a/"
+        },
+        {
+          "name": "Alyssa Manchester",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_efe9dd91630a47359c2624784ef2c860~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/alyssa-manchester/"
+        },
+        {
+          "name": "James Miller",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_cecdd735faa74ce0af1daeb89f6fe016~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/james-miller-a0957832a/"
+        },
+        {
+          "name": "Medhini Muralidharan",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_2c70bac95cc74a6e944925f35bc97421~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/medhini-murali/"
+        },
+        {
+          "name": "Sydnee Patterson",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_fd954acd13694970b51dbe3d3d9cd8c0~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/sydnee-patterson/"
+        },
+        {
+          "name": "Samaya Talluru",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_6b5dcb1f275b4a4e880e140797f2a67c~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/samaya-c-talluru-0943672b7/"
+        },
+        {
+          "name": "Bex Tesfaye",
+          "role": "Co-Social Director",
+          "photo": "https://static.wixstatic.com/media/646782_43c58662d99c46c590e12f6d36a5412b~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/rebeccatesfaye/"
+        }
+      ]
+    },
+    {
+      "name": "Phi Class",
+      "brothers": [
+        {
+          "name": "Megan Aluka",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_92db25de2b1e4d62b391e25614e0d178~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/megan-aluka-2301ab248/"
+        },
+        {
+          "name": "Manomay Bhavani",
+          "role": "Vice President of Alumni Relations",
+          "photo": "https://static.wixstatic.com/media/646782_6cecf056987845d49d9e289afd408a25~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/manomay-bhavani/"
+        },
+        {
+          "name": "Jolie Boiadjieva",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_cbb16710de0d4dfa8e2439f055750a74~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/jolieboiadjieva/"
+        },
+        {
+          "name": "Beckham Carson",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_10cf540fc8f941398b926ac87e3af9c9~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/beckhamcarson/"
+        },
+        {
+          "name": "Jiming Chen",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_cadf299e8f994475961e47d95523a628~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/jimingc/"
+        },
+        {
+          "name": "Xenia Chen",
+          "role": "Vice President of Scholarship & Awards",
+          "photo": "https://static.wixstatic.com/media/646782_f0a18bb0a706488c94cf9b7c60a46295~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/xenia--chen/"
+        },
+        {
+          "name": "Katherine Dodge",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_e92b6b0ef2134d2eba853025540fd7d4~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/katherine-dodge-a70551296/"
+        },
+        {
+          "name": "Siddharth Eleswarapu",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_d19f8241220a4e22a0a01d6b27b1e250~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/siddharth-eleswarapu/"
+        },
+        {
+          "name": "Nicholas George",
+          "role": "Vice President of Operations",
+          "photo": "https://static.wixstatic.com/media/646782_991308cf6d9a45b4b21111a27105740e~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/nicholas-w-george/"
+        },
+        {
+          "name": "Arnav Hosur",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_7aebac9d454d48da96c9248085d0dc45~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/arnav-hosur/"
+        },
+        {
+          "name": "Ryleigh Lanza",
+          "role": "Co-Social Director",
+          "photo": "https://static.wixstatic.com/media/646782_003b4b3e885d41ecbb1a2db96ff3a936~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/ryleigh-lanza/"
+        },
+        {
+          "name": "Jennifer Lombardo",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_dc27e3d58aaa447dbbb25db45a590603~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/jennifer-lombardo-b5985a233/"
+        },
+        {
+          "name": "Riya Patel",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_51a2b30664eb4b1694c9b8e145758afb~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/riya-patel-31a77a268/"
+        },
+        {
+          "name": "Shreya Sanikommu",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_739d8c2228ff43f4b232ea986259bb36~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/shreya-sanikommu/"
+        },
+        {
+          "name": "Leeann Shaw",
+          "role": "Vice President of Branding & Media",
+          "photo": "https://static.wixstatic.com/media/646782_d4a13570f6e942b0ad208a9e31d74525~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/leeann-shaw/"
+        },
+        {
+          "name": "Jack Sheeler",
+          "role": "Co-Health and Wellness Director",
+          "photo": "https://static.wixstatic.com/media/646782_fc9b405cdf874adc9c0bd72ddd594c78~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/jack-sheeler-1a5796350/"
+        },
+        {
+          "name": "Abby Sterba",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_b8b534ff1e87495cbc74d9234abb6ac7~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/abigail-sterba-8ba879339/"
+        },
+        {
+          "name": "Chloe Thompson",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_ef1fc1c0af75489d9f3fd3004f38f970~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/chloexthompson/"
+        },
+        {
+          "name": "Sheen Uddin",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_c293e1903f1946d6adde838c0b896f0d~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/sheenuddin/"
+        },
+        {
+          "name": "Eduardo Zavarce",
+          "role": "Chancellor",
+          "photo": "https://static.wixstatic.com/media/646782_44ebeca7cc734ce0bf85e6515a7491a8~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/eduardo-zavarce-31a6b2285/"
+        },
+        {
+          "name": "Jimmy Zhu",
+          "role": "Co-Vice President of Professional Affairs",
+          "photo": "https://static.wixstatic.com/media/646782_ba00d2116a524314b6df7df4f56057fe~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/james-zhu1/"
+        }
+      ]
+    },
+    {
+      "name": "Chi Class",
+      "brothers": [
+        {
+          "name": "Jahmal Adams",
+          "role": "Co-Vice President of Community Service",
+          "photo": "https://static.wixstatic.com/media/646782_5c30f23c67ef4b0b86614b3711303b4a~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/jahmal-adams-846320333/"
+        },
+        {
+          "name": "Sadhana Balasubramanian",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_11f664f8064c468bbfafbb5106196c58~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/sadhana-bala/"
+        },
+        {
+          "name": "Kiran Blackwell",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_28774a39fe89489d8f88ce22cd4ccc13~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/kiran-blackwell/"
+        },
+        {
+          "name": "Brady Chan",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_5aa866095af64378a2f02548928636e7~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/bradychan/"
+        },
+        {
+          "name": "Armaan Chawla",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_f20195ee8f4f4347ad24e25ad9dd1505~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/armaanchawla15/"
+        },
+        {
+          "name": "James Czlonka",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_7172fae68da34ea7a4e145beaea08828~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/james-czlonka/"
+        },
+        {
+          "name": "Jacqueline Day",
+          "role": "Co-Vice President of Marketing",
+          "photo": "https://static.wixstatic.com/media/646782_192f03c374c54a22b5464f4ae05a470b~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/jacqueline-day-b512492a5/"
+        },
+        {
+          "name": "Sarah Kelly",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_cfb70d05a1424292b41febaae64a48e5~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/sarah-kelly-a04017291/"
+        },
+        {
+          "name": "Joe Lam",
+          "role": "Co-Vice President of Community Service",
+          "photo": "https://static.wixstatic.com/media/646782_511967d5524041ddadc52032adf9e1b2~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/joe-lam-60427934a/"
+        },
+        {
+          "name": "Boden Lee",
+          "role": "Co-Risk Management Director",
+          "photo": "https://static.wixstatic.com/media/646782_dfb9077069e142e4b07ec2ae296b7ba9~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/boden-lee-697774381/"
+        },
+        {
+          "name": "Ethan Lee",
+          "role": "Senior Vice President",
+          "photo": "https://static.wixstatic.com/media/646782_502e2d67f3d444c584f8d0ae71cb0502~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/ethanleeumd/"
+        },
+        {
+          "name": "Konnor Lee",
+          "role": "Co-Vice President of Professional Affairs",
+          "photo": "https://static.wixstatic.com/media/646782_a1e5854333b9495ca29b788cce3289c8~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/konnorlee/"
+        },
+        {
+          "name": "Elise Liu",
+          "role": "Co-Risk Management Director",
+          "photo": "https://static.wixstatic.com/media/646782_f7ba36aaa26b41fb83f4c3ea8391a477~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/ekliu/"
+        },
+        {
+          "name": "Dylan Ma",
+          "role": "Co-Social Director",
+          "photo": "https://static.wixstatic.com/media/646782_1f299c8f8b9e4dc6a6d71bcc3465be0c~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/dzma/"
+        },
+        {
+          "name": "Utkarsh Mandsaurwale",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_c11c2f470b9c4f18a63b246c3874fac1~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/utkarsh-mands/"
+        },
+        {
+          "name": "Andres Parra",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_5813582d59674bbbaa38e6a34da23d1e~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/andresparra7/"
+        },
+        {
+          "name": "Sameer Patel",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_d38847a4bc1442979523b87f99372e44~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/sameer-patel-umd/"
+        },
+        {
+          "name": "Sriya Patoju",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_fccc8aedd09b4b31acb5676b785a1d01~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/sriya-patoju/"
+        },
+        {
+          "name": "Nayeli Portillo",
+          "role": "Vice President of DEI",
+          "photo": "https://static.wixstatic.com/media/646782_8baf14c925d64251951d1da6df464b41~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/nayeliport/"
+        },
+        {
+          "name": "Jillian Savukinas",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_614be7a06b9e4ec2aac814ca85c3b684~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/jillian-savukinas/"
+        },
+        {
+          "name": "Sanika Shah",
+          "role": "Historian",
+          "photo": "https://static.wixstatic.com/media/646782_86604daa68674ed5883bedb218dfa309~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/sanika-shah-umd/"
+        },
+        {
+          "name": "Nishka Sharma",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_f9b8df3c546a4dafa33ce9574a551975~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/nishka-sharma-0a872b287/"
+        },
+        {
+          "name": "Michelle Zhang",
+          "role": "Co-Vice President of Marketing",
+          "photo": "https://static.wixstatic.com/media/646782_96460bcd59b54857add4cd2c03ffd676~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/michelle-zhang9/"
+        }
+      ]
+    },
+    {
+      "name": "Psi Class",
+      "brothers": [
+        {
+          "name": "Boubacar Dime",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_e18f7fa50bc54095b44a4c2e322a1ee7~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/bdime/"
+        },
+        {
+          "name": "Ashley Greer",
+          "role": "Co-Health and Wellness Director",
+          "photo": "https://static.wixstatic.com/media/646782_8249456d2fac4dc7bf536cc72bac2b27~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/ashley-greer-/"
+        },
+        {
+          "name": "Soham Katdare",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_252adc7dcbb4458eaa9e6edaadb42950~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/sakatdare/"
+        },
+        {
+          "name": "Cristina Kramer",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_ca3c64d907fe43108c08941eaea67479~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/cristina-michelle-kramer/"
+        },
+        {
+          "name": "Nini Kutateladze",
+          "role": "Co-Fundraising Director",
+          "photo": "https://static.wixstatic.com/media/646782_34c99cb8fe44448f8bc666d42db7418d~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/nini-kutateladze/"
+        },
+        {
+          "name": "Aiden Luckenbaugh",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_4260844b76de4a32a2aa5b0a42b14a05~mv2.jpg",
+          "linkedin": ""
+        },
+        {
+          "name": "Srujan Mandavilli",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_7b164246e4834bb2859dcab9e91bf7a2~mv2.png",
+          "linkedin": ""
+        },
+        {
+          "name": "Sophie McElroy",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_d1ab714918e04f4999f34d49d6a0836f~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/sophiemcelroy/"
+        },
+        {
+          "name": "Tanush Mendhirata",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_cd61b858198f4d8b913a6dfc2ff60218~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/tanush-mendhirata/"
+        },
+        {
+          "name": "Sai Oruganti",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_c3ceddb5f63f45f8bf043e649896f696~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/sp-oruganti/"
+        },
+        {
+          "name": "Oluwadarasimi Oyewole",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_0c03c02fb317490bb876bebf3fcecc97~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/precious-oyewole-umd/"
+        },
+        {
+          "name": "Tony Pate",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_af0ec8a427954775a515ae1b0685bdd7~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/tony-pate/"
+        },
+        {
+          "name": "Yash Patil",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_a754dffac4604d7381dc62ccdeb9bcd7~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/ypatil8/"
+        },
+        {
+          "name": "Dylan Persaud",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_9346fa11ba594bea959bfa0df98bdb8b~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/dylanpersaud1/"
+        },
+        {
+          "name": "Aidan Pinto",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_1381e2e6905f47159d9a52d35214c47b~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/pintoaidan/"
+        },
+        {
+          "name": "Autumn Piper",
+          "role": "Co-Social Director",
+          "photo": "https://static.wixstatic.com/media/646782_56bab67c9bc44250ab3f883991b77268~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/autumn-piper/"
+        },
+        {
+          "name": "Sahana Rajamanickam",
+          "role": "Co-Brotherhood Director",
+          "photo": "https://static.wixstatic.com/media/646782_022a58a7357a42a5a17093a558cee34f~mv2.png",
+          "linkedin": "https://www.linkedin.com/in/sahanarajamanickam/"
+        },
+        {
+          "name": "Rishika Talla",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_bb088f981d5a4ee8a03629252a913add~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/rishika-talla/"
+        },
+        {
+          "name": "Toni Christina Valdez Tan",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_4a67583705e84dee9d81b84fe5ac5ec5~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/toni-christina-tan-b6994a384/"
+        },
+        {
+          "name": "Gisella Toval",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_393bce7f6a754834b13a20c2ac9c1fa8~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/gisella-toval-362458351/"
+        },
+        {
+          "name": "Ishaan Trambadia",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_0f0882ddc8ec48e595993fe6f3ab68d4~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/ishaantrambadia/"
+        },
+        {
+          "name": "Kathy Tran",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_0ae953e5170c4ce2ba0ba0721a52cbff~mv2.jpeg",
+          "linkedin": "https://www.linkedin.com/in/kathytran2/"
+        },
+        {
+          "name": "Sirini Veldurthi",
+          "role": "Brother",
+          "photo": "https://static.wixstatic.com/media/646782_0d5f0e871ff44dce90926b62403b8717~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/siriniveldurthi/"
+        },
+        {
+          "name": "Prabhav Vuttaluru",
+          "role": "Co-Brotherhood Director",
+          "photo": "https://static.wixstatic.com/media/646782_d2507cce44574fd1b1993f87a7272e21~mv2.jpg",
+          "linkedin": "https://www.linkedin.com/in/prabhavvut/"
+        }
+      ]
+    }
+  ]
+}

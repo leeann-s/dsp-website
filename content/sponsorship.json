@@ -1,0 +1,17 @@
+{
+  "title": "Sponsorship",
+  "intro": "Partner with more than 75 business students at the University of Maryland.",
+  "text": "The sponsorship packet showcases key Delta Sigma Pi events while detailing our mission and goals. Within the packet, we outline various sponsorship tiers, each offering unique benefits. For example, your company can gain access to our member resume database, post job opportunities in our weekly chapter meetings, and enjoy priority scheduling for corporate events with our chapter. Sponsoring us is an excellent opportunity to enhance your visibility among our members and the broader University of Maryland community. For any questions, feel free to reach out to us at outreach.dspumd@gmail.com!",
+  "benefits": [
+    "Access to our member resume database",
+    "Post job opportunities in our weekly chapter meetings",
+    "Priority scheduling for corporate events with our chapter"
+  ],
+  "packetLink": "",
+  "sponsorsTitle": "Our sponsors",
+  "sponsors": [
+    { "name": "KPMG", "logo": "https://static.wixstatic.com/media/646782_1974d3161206487bbb9cffd2590de47a~mv2.webp", "website": "" },
+    { "name": "Textron", "logo": "https://static.wixstatic.com/media/646782_46e6f26c47af4b0491ea2c22328ea814~mv2.png", "website": "" },
+    { "name": "EY", "logo": "https://static.wixstatic.com/media/646782_5b50b6b721b146e2a6fbb2c78560732b~mv2.png", "website": "" }
+  ]
+}
