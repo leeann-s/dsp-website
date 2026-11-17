@@ -138,36 +138,24 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; line-height: 1.05; }
   color: var(--white); background: var(--purple-deep); overflow: hidden;
 }
 .hero-media { position: absolute; inset: 0; }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 58%; }
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
 .hero-media::after {
   content: ""; position: absolute; inset: 0;
   background:
-    linear-gradient(180deg, rgba(37,26,65,.5) 0%, rgba(37,26,65,0) 18%, rgba(37,26,65,0) 52%, rgba(37,26,65,.7) 70%, rgba(30,22,49,.96) 100%);
+    linear-gradient(180deg, rgba(37,26,65,.55) 0%, rgba(37,26,65,.1) 30%, rgba(37,26,65,.55) 62%, rgba(30,22,49,.96) 100%),
+    linear-gradient(90deg, rgba(37,26,65,.65) 0%, rgba(37,26,65,0) 65%);
 }
-/* Letters on the left, text on the right, kept low so the photo's faces stay clear */
-.hero-content { position: relative; padding-top: 140px; padding-bottom: clamp(40px, 7vh, 80px); width: 100%;
-  display: grid; grid-template-columns: auto 1fr; column-gap: clamp(28px, 4vw, 64px); align-items: end; }
+.hero-content { position: relative; padding-top: 140px; padding-bottom: clamp(48px, 8vh, 96px); width: 100%; }
 .hero-letters {
   font-family: var(--font-serif); color: var(--gold);
-  font-size: clamp(6rem, 15vw, 14rem); line-height: .78; letter-spacing: -0.02em;
-  margin: 0 0 0 -0.04em; display: flex;
+  font-size: clamp(7rem, 22vw, 19rem); line-height: .78; letter-spacing: -0.02em;
+  margin: 0 0 clamp(20px, 3vw, 36px) -0.04em; display: flex;
 }
 .hero-letters span { display: inline-block; }
 .hero h1 { font-size: clamp(2.8rem, 6.6vw, 5.8rem); }
 .hero-tagline { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.5rem, 2.6vw, 2.2rem); color: var(--gold); margin: 14px 0 0; line-height: 1.15; }
 .hero-sub { margin: 18px 0 0; max-width: 46ch; color: rgba(255,255,255,.82); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
-.hero .hero-actions { margin-top: 26px; }
-.hero-sub { display: none; }
-/* Phones: photo on top, text underneath instead of on top of everyone */
-@media (max-width: 760px) {
-  .hero { display: block; min-height: 0; }
-  .hero-media { position: relative; height: 58svh; min-height: 340px; }
-  .hero-media img { object-position: center 45%; }
-  .hero-media::after { background: linear-gradient(180deg, rgba(37,26,65,.55) 0%, rgba(37,26,65,0) 22%, rgba(37,26,65,0) 60%, var(--purple-deep) 100%); }
-  .hero-content { display: block; padding-top: 0; margin-top: -64px; padding-bottom: 56px; }
-  .hero-letters { font-size: clamp(5.5rem, 30vw, 8rem); margin-bottom: 18px; }
-}
 
 /* The one orchestrated moment: the letters rise in on load */
 @media (prefers-reduced-motion: no-preference) {
