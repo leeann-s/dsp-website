@@ -138,7 +138,8 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; line-height: 1.05; }
   color: var(--white); background: var(--purple-deep); overflow: hidden;
 }
 .hero-media { position: absolute; inset: 0; }
-.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+/* Zoomed in slightly and nudged right so the group and the stairs sit in the middle */
+.hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: 46% 40%; transform: scale(1.08) translateX(3.5%); }
 .hero-media::after {
   content: ""; position: absolute; inset: 0;
   background:
@@ -154,7 +155,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; line-height: 1.05; }
 .hero-letters span { display: inline-block; }
 .hero h1 { font-size: clamp(2.8rem, 6.6vw, 5.8rem); }
 .hero-tagline { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.5rem, 2.6vw, 2.2rem); color: var(--gold); margin: 14px 0 0; line-height: 1.15; }
-.hero-sub { margin: 18px 0 0; max-width: 46ch; color: rgba(255,255,255,.82); }
+.hero-sub { margin: 18px 0 0; max-width: none; color: rgba(255,255,255,.82); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
 
 /* The one orchestrated moment: the letters rise in on load */
