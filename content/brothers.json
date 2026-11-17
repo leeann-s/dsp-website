@@ -1,5 +1,5 @@
 {
-  "intro": "Over 75 brothers across five classes, all studying business at the University of Maryland.",
+  "intro": "Over 75 brothers across six classes, all studying business at the University of Maryland.",
   "executiveBoardTitle": "Executive Board 2026",
   "executiveBoard": [
     {
@@ -680,6 +680,161 @@
           "role": "Co-Brotherhood Director",
           "photo": "images/brothers/prabhav-vuttaluru.jpg",
           "linkedin": "https://www.linkedin.com/in/prabhavvut/"
+        }
+      ]
+    },
+    {
+      "name": "Omega Class",
+      "brothers": [
+        {
+          "name": "Akshita Balaji",
+          "role": "Brother",
+          "photo": "images/brothers/akshita-balaji.jpg",
+          "linkedin": "https://www.linkedin.com/in/akshita-balaji/"
+        },
+        {
+          "name": "Samay Gunda",
+          "role": "Brother",
+          "photo": "images/brothers/samay-gunda.jpg",
+          "linkedin": "https://www.linkedin.com/in/samay-gunda/"
+        },
+        {
+          "name": "Jillian Harkawik",
+          "role": "Brother",
+          "photo": "images/brothers/jillian-harkawik.jpg",
+          "linkedin": "https://www.linkedin.com/in/jillianharkawik/"
+        },
+        {
+          "name": "Anna Kim",
+          "role": "Brother",
+          "photo": "images/brothers/anna-kim.jpg",
+          "linkedin": "https://www.linkedin.com/in/annajkim29/"
+        },
+        {
+          "name": "Vikas Kotla",
+          "role": "Brother",
+          "photo": "images/brothers/vikas-kotla.jpg",
+          "linkedin": "https://www.linkedin.com/in/vkotla/"
+        },
+        {
+          "name": "Carlton Luu",
+          "role": "Brother",
+          "photo": "images/brothers/carlton-luu.jpg",
+          "linkedin": "https://www.linkedin.com/in/carltonluu/"
+        },
+        {
+          "name": "Carleigh Mahaney",
+          "role": "Brother",
+          "photo": "images/brothers/carleigh-mahaney.jpg",
+          "linkedin": "https://www.linkedin.com/in/carleigh-mahaney/"
+        },
+        {
+          "name": "Selina McClard",
+          "role": "Brother",
+          "photo": "images/brothers/selina-mcclard.jpg",
+          "linkedin": "https://www.linkedin.com/in/selina-mcclard/"
+        },
+        {
+          "name": "Shreyas Mishra",
+          "role": "Brother",
+          "photo": "images/brothers/shreyas-mishra.jpg",
+          "linkedin": "https://www.linkedin.com/in/shreyas-mishra231/"
+        },
+        {
+          "name": "Cindy Nguyen",
+          "role": "Brother",
+          "photo": "images/brothers/cindy-nguyen.jpg",
+          "linkedin": "https://www.linkedin.com/in/cindy-nguyen-3356b4320/"
+        },
+        {
+          "name": "Nathan Ni",
+          "role": "Brother",
+          "photo": "images/brothers/nathan-ni.jpg",
+          "linkedin": "https://www.linkedin.com/in/nathan-ni/"
+        },
+        {
+          "name": "Morayo Omitowoju",
+          "role": "Brother",
+          "photo": "images/brothers/morayo-omitowoju.jpg",
+          "linkedin": "https://www.linkedin.com/in/morayo-omitowoju-80b336298/"
+        },
+        {
+          "name": "Helen Park",
+          "role": "Brother",
+          "photo": "images/brothers/helen-park.jpg",
+          "linkedin": "https://www.linkedin.com/in/helenhpark08/"
+        },
+        {
+          "name": "Nataly Reyes",
+          "role": "Brother",
+          "photo": "images/brothers/nataly-reyes.jpg",
+          "linkedin": "https://www.linkedin.com/in/nataly-p-reyes-/"
+        },
+        {
+          "name": "Sarina Saki",
+          "role": "Brother",
+          "photo": "images/brothers/sarina-saki.jpg",
+          "linkedin": "https://www.linkedin.com/in/sarinasaki/"
+        },
+        {
+          "name": "Morielle Shechter",
+          "role": "Brother",
+          "photo": "images/brothers/morielle-shechter.jpg",
+          "linkedin": "https://www.linkedin.com/in/morielle-shechter-70a96b2ab/"
+        },
+        {
+          "name": "Zack Smith",
+          "role": "Brother",
+          "photo": "images/brothers/zack-smith.jpg",
+          "linkedin": "https://www.linkedin.com/in/zachary-smith24/"
+        },
+        {
+          "name": "Ananth Sreekakolapu",
+          "role": "Brother",
+          "photo": "images/brothers/ananth-sreekakolapu.jpg",
+          "linkedin": "https://www.linkedin.com/in/ananth-sreekakolapu-6000562b5/"
+        },
+        {
+          "name": "Haasini Sriraman",
+          "role": "Brother",
+          "photo": "images/brothers/haasini-sriraman.jpg",
+          "linkedin": "https://www.linkedin.com/in/haasinisriraman/"
+        },
+        {
+          "name": "Parth Tailor",
+          "role": "Brother",
+          "photo": "images/brothers/parth-tailor.jpg",
+          "linkedin": "https://www.linkedin.com/in/parth-a-tailor/"
+        },
+        {
+          "name": "Lillian (Lyla) Vitek",
+          "role": "Brother",
+          "photo": "images/brothers/lillian-vitek.jpg",
+          "linkedin": "https://www.linkedin.com/in/lillian-vitek/"
+        },
+        {
+          "name": "Liana Voritskul",
+          "role": "Brother",
+          "photo": "images/brothers/liana-voritskul.jpg",
+          "linkedin": "https://www.linkedin.com/in/liana-voritskul/"
+        },
+        {
+          "name": "Zach Webster",
+          "role": "Brother",
+          "photo": "images/brothers/zach-webster.jpg",
+          "linkedin": "https://www.linkedin.com/in/zachary-d-webster/"
+        },
+        {
+          "name": "Mark White",
+          "role": "Brother",
+          "photo": "images/brothers/mark-white.jpg",
+          "linkedin": "https://www.linkedin.com/in/mark-white-umd/"
+        },
+        {
+          "name": "Rex Wooster",
+          "role": "Brother",
+          "photo": "images/brothers/rex-wooster.jpg",
+          "linkedin": "https://www.linkedin.com/in/rex-wooster-176106303/"
         }
       ]
     }
