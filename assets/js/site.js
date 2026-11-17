@@ -106,10 +106,11 @@
   }
 
   function contactSection(s) {
-    /* CONTACT FORM PLACEHOLDER
-       The form below looks finished but doesn't send anything yet.
-       When the real form service is picked, connect it here and remove the
-       placeholder message in wireContactForm(). */
+    /* CONTACT FORM
+       Messages are emailed through Web3Forms (web3forms.com, free up to 250 a
+       month) to whichever inbox the access key in content/settings.json
+       ("contactFormKey") was created for. With no key, the form tells people
+       to email us instead. */
     return `
       <section class="section on-white" id="contact" aria-labelledby="contact-title">
         <div class="wrap contact">
@@ -123,13 +124,14 @@
               ${s.facebook ? `<li><a href="${esc(s.facebook)}" target="_blank" rel="noopener">${icon.facebook}Facebook</a></li>` : ""}
             </ul>
           </div>
-          <form class="form-placeholder" data-contact-form novalidate>
+          <form class="form-placeholder" data-contact-form>
             <div class="form-grid">
-              <div class="field"><label for="cf-first">First name</label><input id="cf-first" name="first" autocomplete="given-name"></div>
+              <div class="field"><label for="cf-first">First name</label><input id="cf-first" name="first" autocomplete="given-name" required></div>
               <div class="field"><label for="cf-last">Last name</label><input id="cf-last" name="last" autocomplete="family-name"></div>
-              <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email"></div>
+              <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
               <div class="field"><label for="cf-phone">Phone</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
-              <div class="field full"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message"></textarea></div>
+              <div class="field full"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" required></textarea></div>
+              <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
             </div>
             <div class="form-actions">
               <button class="btn btn-purple" type="submit">Send message</button>
@@ -141,12 +143,47 @@
   }
 
   function wireContactForm(s) {
+    const emailLink = `<a href="mailto:${esc(s.contactEmail)}">${esc(s.contactEmail)}</a>`;
     document.querySelectorAll("[data-contact-form]").forEach((form) => {
-      form.addEventListener("submit", (e) => {
+      const note = form.querySelector(".form-note");
+      const button = form.querySelector("button[type=submit]");
+      const say = (html) => { note.dataset.state = "shown"; note.innerHTML = html; };
+
+      form.addEventListener("submit", async (e) => {
         e.preventDefault();
-        const note = form.querySelector(".form-note");
-        note.dataset.state = "shown";
-        note.innerHTML = `Our contact form is coming soon. For now, email us at <a href="mailto:${esc(s.contactEmail)}">${esc(s.contactEmail)}</a>.`;
+        if (!s.contactFormKey) {
+          say(`Our contact form is coming soon. For now, email us at ${emailLink}.`);
+          return;
+        }
+        const f = Object.fromEntries(new FormData(form));
+        if (f.botcheck) return; // spam bot filled the hidden box
+        const name = [f.first, f.last].filter(Boolean).join(" ").trim();
+        button.disabled = true;
+        say("Sending…");
+        try {
+          const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify({
+              access_key: s.contactFormKey,
+              subject: `New message from dspumd.com: ${name}`,
+              from_name: "DSP website",
+              name,
+              email: f.email,
+              phone: f.phone || "Not given",
+              message: f.message,
+            }),
+          });
+          const data = await res.json().catch(() => ({}));
+          if (!res.ok || data.success === false) throw new Error(data.message || res.status);
+          form.reset();
+          say(`Thanks${f.first ? `, ${esc(f.first)}` : ""}! Your message was sent. We'll get back to you soon.`);
+        } catch (err) {
+          console.error(err);
+          say(`Your message couldn't be sent. Please email us at ${emailLink}.`);
+        } finally {
+          button.disabled = false;
+        }
       });
     });
   }

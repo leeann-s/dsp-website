@@ -169,6 +169,7 @@ content:
       - { name: chapterName, label: Chapter name, type: string }
       - { name: school, label: School, type: string }
       - { name: contactEmail, label: Contact email, type: string }
+      - { name: contactFormKey, label: Contact form access key (from web3forms.com; messages go to the email it was made for), type: string }
       - { name: instagram, label: Instagram URL, type: string }
       - { name: instagramHandle, label: Instagram handle, type: string }
       - { name: linkedin, label: LinkedIn URL, type: string }

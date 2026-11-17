@@ -52,7 +52,13 @@ The script downloads about 140 images into `images/`, resized for the web, and u
 
 ## Contact form
 
-The form on the Home and Sponsorship pages is a placeholder. It looks finished, but pressing Send shows a message pointing people to the outreach email. Look for `CONTACT FORM PLACEHOLDER` in `assets/js/site.js` when it's time to hook one up. Formspree, Web3Forms or a Cloudflare Pages Function all work with a static site.
+The form on the Home and Sponsorship pages emails each message to the outreach inbox through [Web3Forms](https://web3forms.com). It's free for up to 250 messages a month, and there's no server to run.
+
+To turn it on:
+1. Go to web3forms.com, enter `outreach.dspumd@gmail.com` and create an access key. The key is emailed to that inbox.
+2. Paste the key into `contactFormKey` in `content/settings.json` (or under Contact & social links in the editor).
+
+The access key is meant to be public, so it's fine to commit. It can only send messages to that inbox; it can't log in to anything. Until a key is added, the form asks people to email the outreach address instead.
 
 ## Content to double-check
 

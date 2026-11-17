@@ -289,6 +289,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; line-height: 1.05; }
 .field textarea { min-height: 130px; resize: vertical; }
 .field input:focus, .field textarea:focus { outline: 2px solid var(--purple); outline-offset: 0; border-color: transparent; }
 .form-actions { display: flex; align-items: center; gap: 18px; margin-top: 22px; flex-wrap: wrap; }
+.form-actions button:disabled { opacity: .6; cursor: progress; transform: none; }
 .form-note { margin: 0; font-size: .92rem; color: var(--muted); }
 .form-note[data-state="shown"] { color: var(--purple); font-weight: 600; }
 @media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
