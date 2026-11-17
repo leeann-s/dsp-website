@@ -18,13 +18,19 @@
     for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
     return a;
   };
-  // Random mix of tile sizes and small tilts for the "Dare to be Delta" collage
+  // "Dare to be Delta" collage: photos in shuffled order, laid out in blocks
+  // that pack neatly into three rows. Every tile keeps a normal 3:2 photo shape.
+  //   A = big tile on top, two small below     B = small, big below, small
+  //   C = three small stacked
   const collageTiles = (list) => {
-    const sizes = ["big", "tall", "wide", "wide", "small", "small", "small"];
-    return shuffle(list).map((g, i) => {
-      const size = i === 0 ? "big" : sizes[Math.floor(Math.random() * sizes.length)];
-      const tilt = (Math.random() * 3 - 1.5).toFixed(2);
-      return `<figure class="t-${size}" style="--tilt:${tilt}deg"><img src="${img(g, 1000)}" alt="Gamma Sigma brothers at a chapter event" loading="lazy"></figure>`;
+    const blocks = { A: ["big", "small", "small"], B: ["small", "big", "small"], C: ["small", "small", "small"] };
+    const pattern = ["A", "C", "B", "C"];
+    const photos = shuffle(list);
+    const sizes = [];
+    for (let i = 0; sizes.length < photos.length; i++) sizes.push(...blocks[pattern[i % pattern.length]]);
+    return photos.map((g, i) => {
+      const tilt = (Math.random() * 2.4 - 1.2).toFixed(2);
+      return `<figure class="t-${sizes[i]}" style="--tilt:${tilt}deg"><img src="${img(g, 1000)}" alt="Gamma Sigma brothers at a chapter event" loading="lazy"></figure>`;
     }).join("");
   };
   const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
