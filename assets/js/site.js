@@ -251,12 +251,10 @@
   /* ---------- Home ---------- */
 
   function renderHome(d, s, sp) {
-    const letters = "ΔΣΠ".split("").map((l) => `<span>${l}</span>`).join("");
     return `
       <section class="hero">
         <div class="hero-media"><img src="${img(d.heroImage, 2400)}" alt="Brothers of the Gamma Sigma Chapter in business attire"></div>
         <div class="wrap hero-content">
-          <div class="hero-letters" aria-hidden="true">${letters}</div>
           <div class="hero-copy">
             <h1 class="display">${esc(d.heroTitle)}</h1>
             <p class="hero-tagline">${esc(d.heroTagline)}</p>
