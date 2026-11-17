@@ -1,17 +1,65 @@
 {
-  "title": "Fall 2026 recruitment",
+  "title": "Fall 2026 Recruitment",
   "intro": "Each semester our chapter hosts a series of informational, professional, and social events for one week. The recruitment period gives students the opportunity to learn more about Delta Sigma Pi and meet its brothers while allowing the chapter to select future members.",
   "requirementNote": "To be eligible for an interview, you must attend at minimum 3 of the posted recruitment events.",
   "flyer": "images/flyers/current-flyer.png",
   "events": [
-    { "name": "Interfraternal Panel", "date": "2026-09-13", "time": "12 - 2 PM", "location": "VMH 1524 -> VMH 1520", "inviteOnly": false },
-    { "name": "Delta Sigma Pi Information Night", "date": "2026-09-14", "time": "7 - 9 PM", "location": "VMH 1333", "inviteOnly": false },
-    { "name": "Alumni Panel", "date": "2026-09-15", "time": "7 - 9 PM", "location": "VMH 1212", "inviteOnly": false },
-    { "name": "Service Night", "date": "2026-09-16", "time": "7 - 9 PM", "location": "VMH 1333", "inviteOnly": false },
-    { "name": "Trivia Night", "date": "2026-09-17", "time": "6:30 - 8:30 PM", "location": "VMH 1505, 1520", "inviteOnly": false },
-    { "name": "Interviews", "date": "2026-09-19", "time": "", "location": "", "inviteOnly": true },
-    { "name": "Game Night", "date": "2026-09-21", "time": "", "location": "", "inviteOnly": true },
-    { "name": "Speed Dating", "date": "2026-09-23", "time": "", "location": "", "inviteOnly": true }
+    {
+      "name": "Interfraternal Panel",
+      "date": "2026-09-13",
+      "time": "12 - 2 PM",
+      "location": "VMH 1524 -> VMH 1520",
+      "inviteOnly": false
+    },
+    {
+      "name": "Delta Sigma Pi Information Night",
+      "date": "2026-09-14",
+      "time": "7 - 9 PM",
+      "location": "VMH 1333",
+      "inviteOnly": false
+    },
+    {
+      "name": "Alumni Panel",
+      "date": "2026-09-15",
+      "time": "7 - 9 PM",
+      "location": "VMH 1212",
+      "inviteOnly": false
+    },
+    {
+      "name": "Service Night",
+      "date": "2026-09-16",
+      "time": "7 - 9 PM",
+      "location": "VMH 1333",
+      "inviteOnly": false
+    },
+    {
+      "name": "Trivia Night",
+      "date": "2026-09-17",
+      "time": "6:30 - 8:30 PM",
+      "location": "VMH 1505, 1520",
+      "inviteOnly": false
+    },
+    {
+      "name": "Interviews",
+      "date": "2026-09-19",
+      "time": "",
+      "location": "",
+      "inviteOnly": true
+    },
+    {
+      "name": "Game Night",
+      "date": "2026-09-21",
+      "time": "",
+      "location": "",
+      "inviteOnly": true
+    },
+    {
+      "name": "Speed Dating",
+      "date": "2026-09-23",
+      "time": "",
+      "location": "",
+      "inviteOnly": true
+    }
   ],
   "videoTitle": "DSP Fall 2026 rush video",
   "videoUrl": "",

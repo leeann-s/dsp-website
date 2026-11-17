@@ -11,21 +11,5 @@
   "packetLink": "assets/docs/dsp-sponsorship-packet-2026.pdf",
   "packetCover": "assets/docs/sponsorship-packet-cover.jpg",
   "sponsorsTitle": "Our sponsors",
-  "sponsors": [
-    {
-      "name": "KPMG",
-      "logo": "images/logos/sponsor-kpmg.webp",
-      "website": ""
-    },
-    {
-      "name": "Textron",
-      "logo": "images/logos/sponsor-textron.png",
-      "website": ""
-    },
-    {
-      "name": "EY",
-      "logo": "images/logos/sponsor-ey.png",
-      "website": ""
-    }
-  ]
+  "sponsors": []
 }

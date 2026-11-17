@@ -13,6 +13,11 @@
 
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const paras = (text) => String(text ?? "").split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean).map((p) => `<p>${esc(p)}</p>`).join("");
+  const shuffle = (list) => {
+    const a = [...list];
+    for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+    return a;
+  };
   const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
   // Wix-hosted photos get resized on the fly so pages load fast.
@@ -142,6 +147,48 @@
       </section>`;
   }
 
+  /* Photo strip: drifts sideways on its own, pauses on hover/touch, and can be
+     swiped or dragged. The photos are repeated once so it loops seamlessly. */
+  function wireMarquee() {
+    document.querySelectorAll("[data-marquee]").forEach((box) => {
+      const track = box.querySelector(".marquee-track");
+      if (!track || !track.children.length) return;
+      track.insertAdjacentHTML("beforeend", track.innerHTML.replace(/<figure>/g, '<figure aria-hidden="true">'));
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let pos = 0, last = 0, paused = false, resumeTimer = null;
+      const SPEED = 40; // pixels per second
+      const pause = () => { paused = true; clearTimeout(resumeTimer); };
+      const resumeSoon = (ms = 1500) => { clearTimeout(resumeTimer); resumeTimer = setTimeout(() => { paused = false; }, ms); };
+      box.addEventListener("pointerenter", (e) => { if (e.pointerType === "mouse") pause(); });
+      box.addEventListener("pointerleave", (e) => { if (e.pointerType === "mouse") resumeSoon(300); });
+      box.addEventListener("touchstart", pause, { passive: true });
+      box.addEventListener("touchend", () => resumeSoon(2500), { passive: true });
+      box.addEventListener("focusin", pause);
+      box.addEventListener("focusout", () => resumeSoon(300));
+      box.addEventListener("scroll", () => {
+        const half = track.scrollWidth / 2;
+        if (Math.abs(box.scrollLeft - pos) > 2) pos = box.scrollLeft; // the visitor scrolled it themselves
+        if (box.scrollLeft >= half) { pos = box.scrollLeft - half; box.scrollLeft = pos; }
+      }, { passive: true });
+      // drag with the mouse
+      let dragX = null, dragStart = 0;
+      box.addEventListener("mousedown", (e) => { dragX = e.clientX; dragStart = box.scrollLeft; box.classList.add("is-dragging"); e.preventDefault(); });
+      window.addEventListener("mousemove", (e) => { if (dragX !== null) { box.scrollLeft = dragStart - (e.clientX - dragX); pos = box.scrollLeft; } });
+      window.addEventListener("mouseup", () => { dragX = null; box.classList.remove("is-dragging"); });
+      if (reduce) return;
+      const tick = (t) => {
+        const dt = last ? Math.min(t - last, 64) / 1000 : 0; last = t;
+        if (!paused && dragX === null) {
+          const half = track.scrollWidth / 2;
+          pos += SPEED * dt; if (half > 0 && pos >= half) pos -= half;
+          box.scrollLeft = pos;
+        }
+        requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }
+
   function wireContactForm(s) {
     const emailLink = `<a href="mailto:${esc(s.contactEmail)}">${esc(s.contactEmail)}</a>`;
     document.querySelectorAll("[data-contact-form]").forEach((form) => {
@@ -264,11 +311,13 @@
         </div>
       </section>
 
-      <section class="section" aria-labelledby="gallery-title">
+      <section class="section gallery-section" aria-labelledby="gallery-title">
         <div class="wrap">
           <h2 class="display gallery-title" id="gallery-title">${esc(d.galleryTitle)}</h2>
-          <div class="gallery">
-            ${(d.gallery || []).map((g) => `<figure><img src="${img(g, 1400)}" alt="Gamma Sigma brothers at a chapter event" loading="lazy"></figure>`).join("")}
+        </div>
+        <div class="marquee" data-marquee tabindex="0" aria-label="Photos from chapter events. Scroll sideways to see more.">
+          <div class="marquee-track">
+            ${shuffle(d.gallery || []).map((g) => `<figure><img src="${img(g, 1400)}" alt="Gamma Sigma brothers at a chapter event" loading="lazy"></figure>`).join("")}
           </div>
         </div>
       </section>
@@ -554,6 +603,7 @@
       if (page === "home") {
         const [d, sp] = await Promise.all([load("home"), load("sponsorship")]);
         main.innerHTML = renderHome(d, s, sp);
+        wireMarquee();
       } else if (page === "about") {
         main.innerHTML = renderAbout(await load("about"), s);
       } else if (page === "brothers") {
