@@ -18,6 +18,15 @@
     for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
     return a;
   };
+  // Random mix of tile sizes and small tilts for the "Dare to be Delta" collage
+  const collageTiles = (list) => {
+    const sizes = ["big", "tall", "wide", "wide", "small", "small", "small"];
+    return shuffle(list).map((g, i) => {
+      const size = i === 0 ? "big" : sizes[Math.floor(Math.random() * sizes.length)];
+      const tilt = (Math.random() * 3 - 1.5).toFixed(2);
+      return `<figure class="t-${size}" style="--tilt:${tilt}deg"><img src="${img(g, 1000)}" alt="Gamma Sigma brothers at a chapter event" loading="lazy"></figure>`;
+    }).join("");
+  };
   const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
   // Wix-hosted photos get resized on the fly so pages load fast.
@@ -153,7 +162,7 @@
     document.querySelectorAll("[data-marquee]").forEach((box) => {
       const track = box.querySelector(".marquee-track");
       if (!track || !track.children.length) return;
-      track.insertAdjacentHTML("beforeend", track.innerHTML.replace(/<figure>/g, '<figure aria-hidden="true">'));
+      track.insertAdjacentHTML("beforeend", track.innerHTML.replace(/<figure /g, '<figure aria-hidden="true" '));
       const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       let pos = 0, last = 0, paused = false, resumeTimer = null;
       const SPEED = 40; // pixels per second
@@ -315,7 +324,7 @@
         </div>
         <div class="marquee" data-marquee tabindex="0" aria-label="Photos from chapter events. Scroll sideways to see more.">
           <div class="marquee-track">
-            ${shuffle(d.gallery || []).map((g) => `<figure><img src="${img(g, 1400)}" alt="Gamma Sigma brothers at a chapter event" loading="lazy"></figure>`).join("")}
+            <div class="collage">${collageTiles(d.gallery || [])}</div>
           </div>
         </div>
       </section>

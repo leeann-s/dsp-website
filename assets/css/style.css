@@ -254,9 +254,23 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; line-height: 1.05; }
 .marquee { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; cursor: grab; outline-offset: -3px; }
 .marquee::-webkit-scrollbar { display: none; }
 .marquee.is-dragging { cursor: grabbing; }
-.marquee-track { display: flex; gap: 12px; width: max-content; padding: 0 6px; }
-.marquee figure { margin: 0; flex: none; height: clamp(240px, 32vw, 440px); border-radius: var(--radius); overflow: hidden; background: var(--lilac); }
-.marquee img { height: 100%; width: auto; display: block; user-select: none; -webkit-user-drag: none; pointer-events: none; }
+.marquee-track { display: flex; width: max-content; padding: 18px 0 22px; }
+/* Collage: three rows of mixed-size tiles, each slightly tilted */
+.collage {
+  --row: clamp(96px, 11vw, 160px); --col: clamp(110px, 12.5vw, 185px);
+  display: grid; grid-auto-flow: column dense; grid-template-rows: repeat(3, var(--row));
+  grid-auto-columns: var(--col); gap: 12px; padding-right: 12px;
+}
+.collage figure {
+  margin: 0; overflow: hidden; border-radius: 8px; background: var(--lilac);
+  border: 4px solid var(--white); box-shadow: 0 6px 18px -8px rgba(30,22,49,.35);
+  transform: rotate(var(--tilt, 0deg)); transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.collage figure:hover { transform: rotate(0deg) scale(1.04); box-shadow: 0 14px 30px -12px rgba(30,22,49,.5); position: relative; z-index: 2; }
+.collage img { width: 100%; height: 100%; object-fit: cover; display: block; user-select: none; -webkit-user-drag: none; pointer-events: none; }
+.collage .t-big { grid-row: span 2; grid-column: span 2; }
+.collage .t-tall { grid-row: span 2; }
+.collage .t-wide { grid-column: span 2; }
 
 /* ---------- Sponsors ---------- */
 .sponsors { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
