@@ -257,7 +257,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; line-height: 1.05; }
 .marquee-track { display: flex; width: max-content; padding: 18px 0 22px; }
 /* Collage: three rows of mixed-size tiles, each slightly tilted */
 .collage {
-  --row: clamp(84px, 9.5vw, 140px); --col: calc(var(--row) * 1.5);
+  --row: clamp(120px, 13.5vw, 205px); --col: calc(var(--row) * 1.5);
   display: grid; grid-auto-flow: column dense; grid-template-rows: repeat(3, var(--row));
   grid-auto-columns: var(--col); gap: 12px; padding-right: 12px;
 }
