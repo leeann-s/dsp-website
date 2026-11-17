@@ -1,14 +1,14 @@
 {
-  "heroImage": "https://static.wixstatic.com/media/646782_f301ac7acde448549ee5c471e1a4885b~mv2.jpg",
+  "heroImage": "images/about/header.jpg",
   "title": "About us",
-  "crest": "https://static.wixstatic.com/media/646782_afaf40e46f2d4caf85a6dab6eaa69145~mv2.png",
+  "crest": "images/logos/dsp-seal.png",
   "fraternityTitle": "The Fraternity of Delta Sigma Pi",
   "fraternityText": "The International Fraternity of Delta Sigma Pi is one of the largest professional and business fraternities in the world. It was founded on November 7, 1907 at the School of Commerce, Accounts and Finance of New York University, New York, New York and is currently headquartered in Oxford, Ohio. The Fraternity has almost 350 collegiate chapters with over 285,000 initiated members worldwide. With an extensive network of alumni, members have access to countless opportunities and are prepared for a life of success.",
   "purposeTitle": "Our purpose",
   "purposeText": "Delta Sigma Pi is a professional fraternity organized to foster the study of business in universities; to encourage scholarship, social activity and the association of students for their mutual advancement by research and practice; to promote closer affiliation between the commercial world and students of commerce; and to further a higher standard of commercial ethics and culture and the civic and commercial welfare of the community.",
   "historyTitle": "Gamma Sigma history",
   "historyText": "Pictured below are the founding members of our reinstated Gamma Sigma chapter of the University of Maryland, College Park. Composed of diverse business and economics majors, our chapter has grown both in numbers and camaraderie since our reformation in 2013 and reinstatement on December 6, 2014. Through our journey, we have slowly, yet surely become a family. Together, we now organize numerous professional, community service, and social events in order to add value to each of our brothers and to form well balanced professionals ready to take on the world ahead.",
-  "historyPhoto": "https://static.wixstatic.com/media/646782_40d374e5e94f46fc8640a8b932ae3fa5~mv2.png",
+  "historyPhoto": "images/about/history.png",
   "timeline": [
     {
       "year": "1907",
@@ -28,22 +28,22 @@
     {
       "name": "Brotherhood",
       "text": "As a professional business fraternity, Delta Sigma Pi focuses on supporting brothers holistically. Formally, Delta Sigma Pi hosts numerous chapter-wide events from dinners to gatherings. Informally, brothers consistently support each other at non-DSP related events and spend time with each other. DSP has a unique emphasis on brotherly relations and personal development outside of the rigorous business and professional development aspects of the fraternity.",
-      "photo": "https://static.wixstatic.com/media/646782_8d9c2cfe4a3c41d9b952be8481e525d9~mv2.jpg"
+      "photo": "images/about/value-brotherhood.jpg"
     },
     {
       "name": "Service",
       "text": "We hold a variety of community service events each semester such as reading picture books to elementary school students, shoveling mulch onto trees, holding workshops for high school students interested in business, and more. We have also partnered with local employers to serve the community together. DSP is always looking for new ways to serve and make a difference.",
-      "photo": "https://static.wixstatic.com/media/646782_9481562bd4654e48ae9ab237833d4928~mv2.jpg"
+      "photo": "images/about/value-service.jpg"
     },
     {
       "name": "Professionalism",
       "text": "Members of the Gamma Sigma Chapter of Delta Sigma Pi exemplify professionalism and maturity in both their personal lives and career. Our chapter holds many educational professional events each semester. These events include, but are not limited to, networking events, resume reviews, panel discussions, mock interviews, and various educational workshops.",
-      "photo": "https://static.wixstatic.com/media/646782_9e3a7c4a96ee43499918de58166413a9~mv2.jpg"
+      "photo": "images/about/value-professionalism.jpg"
     },
     {
       "name": "Scholarship",
       "text": "Delta Sigma Pi provides numerous opportunities for personal growth. In order to build leadership and character, our chapter holds 15 executive positions. Every semester, we have a LEAD conference held to promote growth and networking. Every other year, Grand Chapter Congress is held nationally where brothers from all states unite.",
-      "photo": "https://static.wixstatic.com/media/646782_d01d346d957d4ce397c682400b01481b~mv2.jpg"
+      "photo": "images/home/gallery-5.jpg"
     }
   ]
 }
